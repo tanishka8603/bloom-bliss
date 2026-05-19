@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowers | Bloom &amp; Bliss</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── NAVBAR ── -->
+<header class="navbar">
+    <div class="logo">
+        <img src="logo.jpg" alt="Logo">
+        <h1>Bloom &amp; Bliss</h1>
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Flowers</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:8px">
+        <div class="cart-icon" title="Cart">
+        🛒
+        <span class="cart-count">0</span>
+        </div>
+        <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+        </button>
+    </div>
+    </header>
+
+    <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Flowers</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- ── PRODUCTS SECTION ── -->
+    <section class="products-section">
+    <div class="section-head fade-in">
+        <h2>Our Flower Collection</h2>
+        <p>Fresh, handcrafted bouquets for every mood and moment.</p>
+        <span class="section-line"></span>
+    </div>
+
+    <!-- Search & Sort toolbar -->
+    <div class="fade-in" style="
+        display:flex; gap:14px; flex-wrap:wrap;
+        max-width:1100px; margin:0 auto 36px; align-items:center;
+    ">
+        <input
+        id="product-search"
+        type="search"
+        placeholder="🔍  Search flowers…"
+        style="
+            flex:1; min-width:200px; padding:11px 18px;
+            border:1.5px solid #f0d5e0; border-radius:30px;
+            font-family:inherit; font-size:.95rem; outline:none;
+            background:#fdfafa; color:#3d1a1a;
+        "
+        >
+        <select id="product-sort" style="
+        padding:11px 18px; border:1.5px solid #f0d5e0;
+        border-radius:30px; font-family:inherit;
+        font-size:.9rem; background:#fdfafa; color:#3d1a1a;
+        cursor:pointer; outline:none;
+        ">
+        <option value="">Sort by</option>
+        <option value="asc">Price: Low → High</option>
+        <option value="desc">Price: High → Low</option>
+        </select>
+    </div>
+
+    <!-- Cards grid -->
+    <div class="products-grid">
+
+        <div class="card fade-in">
+        <span class="card-badge">Popular</span>
+        <img src="https://images.pexels.com/photos/12113670/pexels-photo-12113670.jpeg" alt="Sunflower Bouquet">
+        <div class="card-body">
+            <h3>Sunflower Bouquet</h3>
+            <span class="price">₹2,999</span>
+        </div>
+        <div class="card-footer">
+            <button class="btn-add">Add to Cart</button>
+            <button class="btn-wish" title="Wishlist">♡</button>
+        </div>
+        </div>
+
+        <div class="card fade-in">
+        <img src="https://images.pexels.com/photos/34990301/pexels-photo-34990301.jpeg" alt="Dahlia Bouquet">
+        <div class="card-body">
+            <h3>Dahlia Bouquet</h3>
+            <span class="price">₹3,199</span>
+        </div>
+        <div class="card-footer">
+            <button class="btn-add">Add to Cart</button>
+            <button class="btn-wish" title="Wishlist">♡</button>
+        </div>
+        </div>
+
+        <div class="card fade-in">
+        <img src="https://images.pexels.com/photos/19882188/pexels-photo-19882188.jpeg" alt="Mix Flower Bouquet">
+        <div class="card-body">
+            <h3>Mix Flower Bouquet</h3>
+            <span class="price">₹3,499</span>
+        </div>
+        <div class="card-footer">
+            <button class="btn-add">Add to Cart</button>
+            <button class="btn-wish" title="Wishlist">♡</button>
+        </div>
+        </div>
+
+        <div class="card fade-in">
+        <span class="card-badge">Premium</span>
+        <img src="https://images.pexels.com/photos/18703647/pexels-photo-18703647.jpeg" alt="Hydrangea Bouquet">
+        <div class="card-body">
+            <h3>Hydrangea Bouquet</h3>
+            <span class="price">₹4,499</span>
+        </div>
+        <div class="card-footer">
+            <button class="btn-add">Add to Cart</button>
+            <button class="btn-wish" title="Wishlist">♡</button>
+        </div>
+        </div>
+
+        <div class="card fade-in">
+        <img src="https://images.pexels.com/photos/3392982/pexels-photo-3392982.jpeg" alt="Peonies Bouquet">
+        <div class="card-body">
+            <h3>Peonies Bouquet</h3>
+            <span class="price">₹3,599</span>
+        </div>
+        <div class="card-footer">
+            <button class="btn-add">Add to Cart</button>
+            <button class="btn-wish" title="Wishlist">♡</button>
+        </div>
+        </div>
+
+        <div class="card fade-in">
+        <span class="card-badge">Best Seller</span>
+        <img src="https://images.pexels.com/photos/931180/pexels-photo-931180.jpeg" alt="Rose Bouquet">
+        <div class="card-body">
+            <h3>Rose Bouquet</h3>
+            <span class="price">₹4,999</span>
+        </div>
+        <div class="card-footer">
+            <button class="btn-add">Add to Cart</button>
+            <button class="btn-wish" title="Wishlist">♡</button>
+        </div>
+        </div>
+
+    </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer>
+    <div class="footer-inner">
+        <strong>Bloom &amp; Bliss</strong>
+        <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Flowers</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        </div>
+        <p>© 2025 Bloom &amp; Bliss — Chandigarh, India 🌸</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
